@@ -132,7 +132,7 @@ export default function HomePage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-900 font-sans selection:bg-indigo-100 pb-20 relative overflow-hidden">
+    <div className="min-h-screen bg-gray-50 text-gray-900 font-sans selection:bg-indigo-100 pb-20 relative">
       {/* Background Animated Blobs */}
       <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
         <motion.div
@@ -726,7 +726,7 @@ export default function HomePage() {
                   exit={{ opacity: 0, x: -20, height: 0, marginBottom: 0 }}
                   className="flex items-center gap-4 bg-white p-4 rounded-2xl border border-gray-100 shadow-sm group hover:shadow-md transition-shadow"
                 >
-                  <div className="w-20 h-20 bg-gray-50 rounded-2xl flex items-center justify-center text-4xl shadow-sm border border-gray-100 overflow-hidden">
+                  <div className="w-20 h-20 bg-gray-50 rounded-2xl flex items-center justify-center text-4xl shadow-sm border border-gray-100 overflow-hidden relative">
                     {item.image ? (
                       <Image
                         src={item.image}
